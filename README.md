@@ -2,6 +2,8 @@ dpkg-licenses
 =============
 A command line tool which lists the licenses of all installed packages in a Debian-based system (like Ubuntu)
 
+*NOTE* This fork is a quick modification that outputs, unlike the document below shows, only the name and licenses using the pipe chraracter as separator. This is easier for further processing, and other data can be gotten from dpkg.
+
 How it works
 ------------
 
