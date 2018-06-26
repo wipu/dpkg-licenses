@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 #    Copyright 2016 Daniel Alder, https://github.com/daald
 #
@@ -34,7 +34,7 @@ else
   exit 0  # no copyright file found
 fi
 
-result=$(grep -oP '/usr/share/common-licenses/[0-9A-Za-z_.+-]+[0-9A-Za-z+]' "$copyrightfile" | cut -d/ -f5- | sort -u)
+result=$(grep -o '/usr/share/common-licenses/[0-9A-Za-z_.+-]\+[0-9A-Za-z+]' "$copyrightfile" | cut -d/ -f5- | sort -u)
 if [ -n "$result" ]; then
   echo "$result"
 fi

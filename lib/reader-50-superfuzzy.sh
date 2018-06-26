@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 #    Copyright 2016 Daniel Alder, https://github.com/daald
 #
